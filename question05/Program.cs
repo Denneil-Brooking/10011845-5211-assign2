@@ -12,8 +12,8 @@ namespace question05
 
             for (var i = 0; i < 12; i++){
                 var a = i + 1;
-                var val = a / number;
-                Console.WriteLine($"{a} / {number} = {val}");
+                var val = Math.Truncate(a/number*100)/100;
+                Console.WriteLine($"{a} / {number} = {val:00.00}");
             }
         }
     }
