@@ -10,9 +10,10 @@ namespace question05
 
             var number = Convert.ToDouble(Console.ReadLine());
 
-            for(var i = 0; i < 12; i++) {
+            for (var i = 0; i < 12; i++){
                 var a = i + 1;
-                Console.WriteLine($"{a} x {number} = {a / number}");
+                var val = a / number;
+                Console.WriteLine($"{a} / {number} = {val}");
             }
         }
     }
