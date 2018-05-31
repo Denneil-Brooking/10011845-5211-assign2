@@ -8,12 +8,11 @@ namespace question04
         {
             Console.WriteLine("Print out the reverse timestables (highest number first) for:");
 
-            var number = Convert.ToInt32(Console.ReadLine());
+            var number = int.Parse(Console.ReadLine());
 
-            for(var i = 0; i < 12; i++) {
-                var a = i + 1;
-                Console.WriteLine($"{a} x {number} = {a * number}");
-                
+            for(var i = 12; i > 0; i--) {
+
+                Console.WriteLine($"{i} x {number} = {i * number}");
             }
         }
     }
